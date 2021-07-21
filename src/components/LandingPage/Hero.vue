@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 	.hero{
-		margin-top: 10rem;
+		margin-top: 8rem;
 		border-radius: 10px;
 		height: 50vh;
 		background:  linear-gradient(
@@ -35,14 +35,13 @@ export default {
             0 10px 27px rgba(73, 73, 73, 0.2);
 	}
 	.hero-image{
-		background: url('../../../src/assets/hero.png') center/cover no-repeat;
+		background: url('../../../src/assets/hero-pic.jpg') center/cover no-repeat;
 	}
 	.hero-content{
 		display: flex;
 		flex-direction: column;
-		height: auto;
+		height:auto;
 		justify-content: center;
-
 	}
 	.hero-text{
 		font-size: 2.3rem;
@@ -50,8 +49,6 @@ export default {
 	}
 	.hero-image{
 		border-radius: 10px;
-		
-		
 	}
 	.CTA{
 		background: var(--white-color);
@@ -60,6 +57,14 @@ export default {
 		padding: 3px;
 		font-size: 1.4rem;
 		border-radius: 10px;
+	}
+	@media (max-width: 768px) {
+		.hero-content{
+			height:25vh;
+		}
+		.hero-image{
+			height: 25vh;
+		}
 	}
 
 </style>
