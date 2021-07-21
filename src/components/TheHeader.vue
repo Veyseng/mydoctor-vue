@@ -72,6 +72,7 @@ export default {
     width: 25px;
     height: 3px;
     margin: 5px auto;
+    border-radius: 5px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--primary-color);

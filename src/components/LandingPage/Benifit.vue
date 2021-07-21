@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style scoped>
+	h1{
+		font-size: 2rem;
+	}
 	.row{
 		text-align: center;
 		margin: 1rem 0;

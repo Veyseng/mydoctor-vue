@@ -2,8 +2,7 @@
 	<div class="container">
 		<!--The hero -->
 		<The-Hero></The-Hero>
-    <The-Checkup></The-Checkup>
-    <The-Treatment></The-Treatment>
+    <The-Service></The-Service>
     <The-Benifit></The-Benifit>
     <The-Testimony></The-Testimony>
   <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
@@ -17,16 +16,14 @@
 <script>
 import Hero from '../components/LandingPage/Hero.vue'
 import TheTestimony from '../components/LandingPage/Testimony.vue'
-import TheTreatment from '../components/LandingPage/Treatment.vue'
-import TheCheckup from '../components/LandingPage/Checkup.vue'
+import TheService from '../components/LandingPage/Service.vue'
 import TheBenifit from '../components/LandingPage/Benifit.vue'
 
 export default {
 	components:{
 		"The-Hero" : Hero,
     "The-Testimony" : TheTestimony,
-    'The-Treatment' : TheTreatment,
-    'The-Checkup' : TheCheckup,
+    'The-Service' : TheService,
     'The-Benifit' : TheBenifit
 	}
 }
