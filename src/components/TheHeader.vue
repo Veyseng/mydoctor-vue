@@ -6,7 +6,7 @@
             </router-link>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/about">About</router-link>
+                    <router-link class="nav-link" to="/about">About Us</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link class="nav-link CTA" to="/contact">Contact Us</router-link>
@@ -87,7 +87,7 @@ export default {
 }
 
 .nav-link{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #475569;
 }

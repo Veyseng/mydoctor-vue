@@ -34,6 +34,9 @@ export default {
 	  box-shadow:
             0 10px 27px rgba(73, 73, 73, 0.2);
 	}
+	.hero-image{
+		background: url('../../../src/assets/hero.png') center/cover no-repeat;
+	}
 	.hero-content{
 		display: flex;
 		flex-direction: column;
@@ -42,7 +45,7 @@ export default {
 
 	}
 	.hero-text{
-		font-size: 2rem;
+		font-size: 2.3rem;
 		color: var(--white-color);
 	}
 	.hero-image{
@@ -55,7 +58,7 @@ export default {
 		text-decoration: none;
 		color: var(--primary-color);
 		padding: 3px;
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		border-radius: 10px;
 	}
 
