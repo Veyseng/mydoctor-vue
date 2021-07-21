@@ -1,12 +1,18 @@
 <template>
+  <The-Header></The-Header>
   <router-view></router-view>
+  
+  <The-Footer></The-Footer>
   
 </template>
 <script>
 import TheHeader from "./components/TheHeader.vue"
+
+import TheFooter from "./components/TheFooter.vue"
 export default {
   components:{
-    'The-Header' : TheHeader
+    'The-Header' : TheHeader,
+    'The-Footer' : TheFooter
   },
   setup() {
     
@@ -15,8 +21,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body{
   font-family:  'Poppins', sans-serif;
   margin: 0;
@@ -31,12 +36,8 @@ body{
 }
 
 #app{
-	height: 100vh;
-	background-color: var(--primary-color);
-	background-image:
-	  linear-gradient(
-		to top right, 
-		var(--primary-color), var(--secondary-color)
-	  );
+	height: auto;
+	background-color: var(--white-color);
+
 }
 </style>

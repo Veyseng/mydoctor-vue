@@ -1,294 +1,155 @@
 <template>
-	 <section>
-      <header>
-        <h2><a href="#" class="logo">Logo</a></h2>
-        <div class="navigation">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Info</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-        </div>
-      </header>
-      <div class="content">
-        <div class="info">
-          <h2>Like Nature <br><span>Be Creative!</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <a href="#" class="info-btn">More Info</a>
-        </div>
-      </div>
-      <div class="media-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </section>
-	<div id="nav">
-
-		<div id="logo">
-			<img class="img" src="../assets/logo.png" alt="">
-		</div>
-		<div>
-			<router-link to="/">Home</router-link>
-			<router-link to="/about">About us</router-link>
-			<router-link to="/contactus">Contact us</router-link>
-		</div>
-		
-	</div>
+  <header class="header" >
+        <nav class="navbar">
+            <router-link class="nav-link nav-logo" to="/">
+              <img src="../../src/assets/logo.svg" alt="">
+            </router-link>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <router-link class="nav-link" to="/about">About</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link CTA" to="/contact">Contact Us</router-link>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
 </template>
 
 <script>
 export default {
+  mounted(){
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
 
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+  }
 }
 </script>
 
 <style scoped>
-section{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: url('../assets/logo.png')no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-header{
-  position: relative;
-  top: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo{
-  position: relative;
-  color: #000;
-  font-size: 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-header .navigation a{
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 2px 15px;
-  border-radius: 20px;
-  transition: 0.3s;
-  transition-property: background;
-}
-
-header .navigation a:not(:last-child){
-  margin-right: 30px;
-}
-
-header .navigation a:hover{
-  background: #fff;
-}
-
-.content{
-  max-width: 650px;
-  margin: 60px 100px;
-}
-
-.content .info h2{
-  color: #226A80;
-  font-size: 55px;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 60px;
-  margin-bottom: 30px;
-}
-
-.content .info h2 span{
-  color: #fff;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-.content .info p{
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.content .info-btn{
-  color: #fff;
-  background: #226A80;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: 0.3s;
-  transition-property: background;
-}
-
-.content .info-btn:hover{
-  background: #0C4F60;
-}
-
-.media-icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.media-icons a{
-  position: relative;
-  color: #111;
-  font-size: 25px;
-  transition: 0.3s;
-  transition-property: transform;
-}
-
-.media-icons a:not(:last-child){
-  margin-right: 60px;
-}
-
-.media-icons a:hover{
-  transform: scale(1.5);
-}
-
-label{
-  display: none;
-}
-
-#check{
-  z-index: 3;
-  display: none;
-}
-
-/* Responsive styles */
-
-@media (max-width: 960px){
-  header .navigation{
-    display: none;
+  li {
+    list-style: none;
   }
 
-  label{
+  a {
+      text-decoration: none;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.1rem;
+      position: fixed;
+      width: 100vw;
+      background: white;
+      top: 0;
+  }
+  .hamburger {
+    display: none;
+  }
+  img{
+    width: 3.2rem;
+  }
+.bar {
     display: block;
-    font-size: 25px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: color;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--primary-color);
+}
+  .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
-  label:hover{
-    color: #fff;
-  }
-
-  label .close-btn{
-    display: none;
-  }
-
-  #check:checked ~ header .navigation{
-    z-index: 2;
-    position: fixed;
-    background: rgba(114, 223, 255, 0.9);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #check:checked ~ header .navigation a{
-    font-weight: 700;
-    margin-right: 0;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-  }
-
-  #check:checked ~ header label .menu-btn{
-    display: none;
-  }
-
-  #check:checked ~ header label .close-btn{
-    z-index: 2;
-    display: block;
-    position: fixed;
-  }
-
-  label .menu-btn{
-    position: absolute;
-  }
-
-  header .logo{
-    position: absolute;
-    bottom: -6px;
-  }
-
-  .content .info h2{
-    font-size: 45px;
-    line-height: 50px;
-  }
-
-  .content .info h2 span{
-    font-size: 40px;
-    font-weight: 600;
-  }
-
-  .content .info p{
-    font-size: 14px;
-  }
+.nav-item {
+    margin-left: 5rem;
 }
 
-@media (max-width: 560px){
-  .content .info h2{
-    font-size: 35px;
-    line-height: 40px;
-  }
-
-  .content .info h2 span{
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  .content .info p{
-    font-size: 14px;
-  }
-}
-      
-
-#logo{
-	width: 1rem;
-}
-.img{
-	width: 3rem;
-}
-#nav {
-	background: white;
-  	text-decoration: none;
-  	padding: 30px;
-  	color: var(--gray-color);
-	display:flex;
-
-	justify-content: space-between;
-	align-items: center;
+.nav-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #475569;
 }
 
-#nav a {
-  text-decoration: none;
-  padding: 1rem;
-  color: var(--gray-color);
+.nav-link:hover{
+    color: var(--primary-color);
 }
-#nav a.router-link-exact-active {
+.CTA{
   color: var(--primary-color);
+  border-radius: 10px;
+  border: 1px solid var(--primary-color)
 }
+.CTA:hover{
+  background: var(--primary-color);
+  color: var(--white-color);
+
+}
+.nav-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        flex-direction: column;
+        background-color: var(--white-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+}
+
+
 </style>
