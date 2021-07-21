@@ -1,7 +1,4 @@
 <template>
-  <div class="py-4">
-    <The-Header />
-  </div>
   <router-view></router-view>
   
 </template>
@@ -34,7 +31,7 @@ body{
 }
 
 #app{
-	height: auto;
+	height: 100vh;
 	background-color: var(--primary-color);
 	background-image:
 	  linear-gradient(
