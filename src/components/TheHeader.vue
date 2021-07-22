@@ -5,8 +5,11 @@
               <img src="../../src/assets/logo.svg" alt="">
             </router-link>
             <ul class="nav-menu">
+              <li class="nav-item">
+                    <router-link class="nav-link" to="/">Home</router-link>
+                </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/about">About Us</router-link>
+                    <router-link class="nav-link" to="/Testimonie">Our Testimonies</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link class="nav-link CTA" to="/contact">Contact Us</router-link>
@@ -55,10 +58,11 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 1.1rem;
+      padding: .2rem 1.7rem;
       position: fixed;
       width: 100vw;
       background: white;
+      z-index: 1;
       top: 0;
   }
   .hamburger {
@@ -84,7 +88,7 @@ export default {
   }
 
 .nav-item {
-    margin-left: 5rem;
+    margin: 0 1rem ;
 }
 
 .nav-link{
@@ -115,7 +119,7 @@ export default {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 6rem;
+        top: 5rem;
         flex-direction: column;
         background-color: var(--white-color);
         width: 100%;

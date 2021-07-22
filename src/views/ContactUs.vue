@@ -1,22 +1,25 @@
 <template>
-  <div class="contact">
-    <h1>Coming soon</h1>
-    <div class="img-maintenance">
-
-    </div>
-  </div>
+<div class="contactus">
+  <The-Contact></The-Contact>
+</div>
+  
 </template>
-<style scoped>
-  h1{
-    text-align: center;
+
+<script>
+import Contact from "../components/Contact.vue"
+export default {
+  components:{
+    "The-Contact" : Contact
   }
-  .contact{
-    margin-top: 8rem;
-    height: 80vh;
+}
+</script>
+
+<style>
+  .contactus{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: url('../../src/assets/repair.jpg') center/cover no-repeat;
+    flex-direction: column;
+    height: 100vh;
+    background: url('../../src/assets/contactus.jpg') center/cover no-repeat;
   }
 </style>

@@ -1,0 +1,76 @@
+<template>
+  <div class="contact" >
+     <form class="form" method="POST" data-netlify="true">
+   
+    <h1 >Thank you for your interest!</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingText" placeholder="text">
+      <label for="floatingPassword">Name</label>
+    </div>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email Address</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingText" placeholder="text">
+      <label for="floatingPassword">Position</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingText" placeholder="text">
+      <label for="floatingPassword">Objective</label>
+    </div>
+    <button class="w-40 btn btn-lg btn-primary" type="submit">Submit</button>
+    
+  </form>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+  .contact{
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  form{
+    width: 40vw;
+	background-color: rgba(224, 222, 222, 0.7);
+	padding: 2rem;
+	border-radius: 10px;
+	 box-shadow:
+            0 10px 27px rgba(73, 73, 73, 0.2);
+  }
+  h1{
+	  display: inline-block;
+	  padding: 2px;
+	  background: -webkit-linear-gradient(45deg,var(--primary-color), var(--secondary-color));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+  }
+  .btn{
+	  display: flex;
+	  justify-content: center;
+	  color: var(--white-color);
+	  background: var(--primary-color);
+	  border: none;
+	  margin: 1rem;
+  }
+  .btn:hover{
+	  color: var(--primary-color);
+	  background: var(--white-color);
+	  border: none;
+  }
+  @media only screen and (max-width: 768px){
+	  form{
+    	width: 80vw;
+  		}
+  }
+</style>
