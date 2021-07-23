@@ -1,7 +1,7 @@
 <template>
 
   <div class="contact" >
-     <form class="form" name="contact" data-netlify="true" >
+     <form class="form" name="contact" method="POST" data-netlify="true" >
       <h1 >Thank you for your interest!</h1>
       <p>Contact us for more information</p>
 
