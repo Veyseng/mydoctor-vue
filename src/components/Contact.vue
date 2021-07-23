@@ -1,7 +1,7 @@
 <template>
 
   <div class="contact" >
-     <form class="form" name="contact" method="post"  data-netlify="true">
+     <form class="form" name="contact" netlify netlify-honeypot="bot-field" hidden>
       <h1 >Thank you for your interest!</h1>
       <p>Contact us for more information</p>
 
@@ -22,7 +22,6 @@
       <label for="floatingPassword">Objective</label>
     </div>
     <button class="w-40 btn btn-lg btn-primary" type="submit">Submit</button>
-    
   </form>
   </div>
 </template>

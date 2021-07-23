@@ -10,7 +10,7 @@
 				<p>Enhance your health checkup and treatment via our online platform where you can access anywhere in Cambodia.</p>
 			</div>
 			<div>
-				<router-link class="CTA" to="/contact"><span class="CTA-text">Connect with us</span> </router-link>
+				<a class="CTA" href="#contact"><span class="CTA-text">Connect with us</span> </a>
 			</div>
 			
 		</div>
