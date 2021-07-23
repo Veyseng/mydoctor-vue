@@ -3,7 +3,7 @@
   <div class="contact" >
      <form class="form" name="contact" method="POST" v-on:submit.prevent="handleSubmit" data-netlify="true" action="/success" 
   data-netlify-honeypot="bot-field">
-   
+    <input type="hidden" name="form-name" value="contact">
     <h1 >Thank you for your interest!</h1>
     <p>Contact us for more information</p>
 
