@@ -6,13 +6,19 @@
             </router-link>
             <ul class="nav-menu">
               <li class="nav-item">
-                    <router-link class="nav-link" to="/">Home</router-link>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/Testimonie">Our Testimonies</router-link>
+                    <a href="#aboutapp" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link CTA" to="/contact">Contact Us</router-link>
+                    <a href="#work" class="nav-link">How it works?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link CTA" href="#contact">Contact Us</a>
                 </li>
             </ul>
             <div class="hamburger">

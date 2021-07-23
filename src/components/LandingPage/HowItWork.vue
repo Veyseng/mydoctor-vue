@@ -1,34 +1,34 @@
 <template>
+<div id="work">
+
+</div>
   <div class="row how-it-work">
-	  		
-	   <div class="col-md-12 how-content">
-			<div>
-				<h1 >How it work?</h1>
-			</div>
-		</div>
+	  	<h1 >How it work?</h1>
 		<div class="col-md-6 step">
 			<div>
-				<h3>Step <span>1</span></h3>
-				<h6>Signup</h6>
+				<!--Add icon-->
+			</div>
+			<div>
+				<h3><span class="number">1</span> Signup</h3>
 			</div>
 		</div>
 		
 		<div class="col-md-6 step">
 			<div>
-				<h3>Step <span>2</span></h3>
-				<h6>Find a Treatment or Checkup</h6>
+				<h3><span class="number">2</span> Find Treatment or Checkup</h3>
+				<p></p>
 			</div>	
 		</div>
 		<div  class="col-md-6 step">
 			<div>
-				<h3>Step <span>3</span></h3>
-					<h6>Checkup</h6>
+				<h3><span class="number">3</span> Checkout</h3>
+				<p></p>
 			</div>
 		</div>
 		<div  class="col-md-6 step">
 			<div>
-				<h3>Step <span>4</span></h3>
-					<h6>Ready to go</h6>
+				<h3><span class="number">4</span> Ready to go</h3>
+				<p></p>
 			</div>
 		</div>
 		
@@ -42,9 +42,12 @@ export default {
 </script>
 
 <style scoped>
+#work{
+	padding-top: 8rem;
+}
 	h1{
 		font-size: 2rem;
-		border-bottom:  2px solid var(--primary-color);
+		text-align: center;
 	}
 	li{
 		list-style: none;
@@ -58,7 +61,6 @@ export default {
 		justify-content: center;
 	}
 	.how-it-work{
-		margin-top: 4rem;
 		height: auto;
 		display: flex;
 		justify-content: center;
@@ -83,6 +85,11 @@ export default {
 	.how-content{
 		margin: 0;
 		padding: 0;
+	}
+	.number{
+		color: var(--primary-color);
+		width: 1rem;
+		border-radius: 4px;
 	}
 	@media only screen and (max-width: 768px){
 

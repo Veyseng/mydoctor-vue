@@ -39,7 +39,7 @@ body{
 	--primary-color: #8B61DE;
 	--secondary-color: #03B1A7;
   --white-color: #ffffff;
-  --gray-color: #444343;
+  --gray-color: #555454;
   --lightgray-color : #eceaea;
 }
 

@@ -2,8 +2,8 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<h1>Health Comes First</h1>
+				<div class="col-md-6">
+					<h1>My Doctor, My Health</h1>
 					<div class="social-media">
 						<a href="https://www.facebook.com/My-Doctor-106380528314320/">
 							<i class="fab fa-facebook"></i>
@@ -13,30 +13,12 @@
 						<i class="fas fa-globe-americas"></i>
 					</div>
 				</div>
-				<div class="col-md-4 site">
+				<div class="col-md-6 site">
 					<h3>Our site</h3>
 					<ul>
 						<li>
-							<a href="#aboutapp">About Us</a>
+							<a href="#">Home</a>
 						</li>
-						<li>
-							<a href="#">Our Service</a>
-						</li>
-						<li>
-							<a href="#about">Our Features</a>
-						</li>
-						<li>
-							<a href="#about">Our Testimonies</a>
-						</li>
-						
-						<li>
-							<router-link to="/contact">Contact Us</router-link>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-4 site">
-					<h3>Our site</h3>
-					<ul>
 						<li>
 							<a href="#aboutapp">About Us</a>
 						</li>
@@ -44,14 +26,10 @@
 							<a href="#service">Our Service</a>
 						</li>
 						<li>
-							<a href="#aboutapp">Our Features</a>
+							<a href="#work">How it works?</a>
 						</li>
 						<li>
-							<a href="#about">Our Testimonies</a>
-						</li>
-						
-						<li>
-							<router-link to="/contact">Contact Us</router-link>
+							<a href="#contact">Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -95,11 +73,15 @@ export default {
 		text-decoration: none;
 		color: var(--white-color);
 	}
+	h3{
+		padding: 2px;
+		border-bottom: 1px white solid;
+	}
 	.site{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 	/* Social media */
 	.social-media i{

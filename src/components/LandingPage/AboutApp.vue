@@ -49,4 +49,7 @@ export default {
 		border-radius: 20px;
 		width: 100%;
 	}
+	p{
+		color:var(--gray-color)
+	}
 </style>

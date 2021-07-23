@@ -1,8 +1,10 @@
 <template>
+
   <div class="contact" >
      <form class="form" method="POST" data-netlify="true">
    
     <h1 >Thank you for your interest!</h1>
+    <p>Contact us for more information</p>
 
     <div class="form-floating">
       <input type="text" class="form-control" id="floatingText" placeholder="text">
@@ -42,11 +44,15 @@ export default {
  
   form{
     width: 40vw;
-	background-color: rgba(224, 222, 222, 0.7);
+	background-color: rgb(255, 255, 255);
 	padding: 2rem;
 	border-radius: 10px;
 	 box-shadow:
             0 10px 27px rgba(73, 73, 73, 0.2);
+  }
+  input:focus{
+    box-shadow: none;
+    border-color: var(--primary-color);
   }
   h1{
 	  display: inline-block;

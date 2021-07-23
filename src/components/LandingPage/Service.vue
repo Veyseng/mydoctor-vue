@@ -11,11 +11,12 @@
 			<div class="text-content text-checkup">
 				<div>
 					<h1 class="hero-text ">Checkup</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem harum atque facilis ducimus, voluptates consequuntur quaerat soluta sequi ex exercitationem beatae! Accusantium, maxime incidunt vitae qui explicabo eligendi ad.</p>
 				</div>
+				<!--
 				<div>
 					<router-link class="CTA CTA-checkup" to="/contact">Explore more</router-link>
 				</div>
+				-->
 			</div>
 		</div>
 	   <div class="col-md-6 service-content">
@@ -25,11 +26,12 @@
 			<div  class="text-content text-treatment">
 				<div>
 					<h1 class="hero-text ">Treatment</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolores vitae? Officia dicta quo dolor alias. Dolor sint aliquam, alias sed deleniti facere, unde vero atque commodi reprehenderit vitae omnis?</p>
 				</div>
+				<!--
 				<div>
 					<router-link class="CTA CTA-treatment" to="/contact">Explore more</router-link>
 				</div>
+				-->
 			</div>
 		</div>
 			
@@ -38,16 +40,16 @@
 	  
 	   <div class="col-md-6 service-content">
 			<div class='content-image'>
-
 			</div>
 			<div  class="text-content text-treatment">
 				<div>
 					<h1 class="hero-text">Health Contents</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolores vitae? Officia dicta quo dolor alias. Dolor sint aliquam, alias sed deleniti facere, unde vero atque commodi reprehenderit vitae omnis?</p>
 				</div>
+				<!--
 				<div>
 					<router-link class="CTA CTA-treatment" to="/contact">Explore more</router-link>
 				</div>
+				-->
 			</div>
 		</div>
 		<div class="col-md-6 service-content" >
@@ -57,11 +59,12 @@
 			<div class="text-content text-checkup">
 				<div>
 					<h1 class="hero-text ">Online Consultation</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem harum atque facilis ducimus, voluptates consequuntur quaerat soluta sequi ex exercitationem beatae! Accusantium, maxime incidunt vitae qui explicabo eligendi ad.</p>
 				</div>
+				<!--
 				<div>
 					<router-link class="CTA CTA-checkup" to="/contact">Explore more</router-link>
 				</div>
+				-->
 			</div>
 		</div>
   </div>
@@ -96,7 +99,6 @@ export default {
 		justify-content:flex-start;
 		align-items: center;
 		margin: 1rem 0;
-		
 	}
 	.hideme{
 		opacity: 0;
@@ -110,7 +112,7 @@ export default {
 		justify-content: center;
 		align-items: center;
 		border-radius: 0 0 10px 10px;
-		padding: .5rem 0;
+		padding: 1rem 0;
 	}
 	.text-treatment{
 		width:33vw;

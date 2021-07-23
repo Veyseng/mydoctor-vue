@@ -54,8 +54,7 @@ export default {
 	i{
 		font-size: 2rem;
 		padding: 10px;
-		background: var(--primary-color);
-		color: var(--white-color);
+		color: var(--primary-color);
 		border-radius: 10px;
 	}
 	.row{
@@ -71,6 +70,7 @@ export default {
 	}
 	p{
 		padding: .2rem;
+		color: var(--gray-color)
 	}
 	.line-up{
 		border-right: 1px solid var(--secondary-color);
