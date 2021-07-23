@@ -1,7 +1,7 @@
 <template>
 
   <div class="contact" >
-     <form class="form" name="contact" netlify netlify-honeypot="bot-field" hidden>
+     <form class="form" name="contact" netlify netlify-honeypot="bot-field">
       <h1 >Thank you for your interest!</h1>
       <p>Contact us for more information</p>
 
