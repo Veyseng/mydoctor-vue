@@ -1,7 +1,7 @@
 <template>
 
   <div class="contact" >
-     <form class="form" name="contact" method="POST" data-netlify="true">
+     <form class="form" name="contact"  data-netlify="true">
    
     <h1 >Thank you for your interest!</h1>
     <p>Contact us for more information</p>
@@ -22,7 +22,7 @@
       <input type="text" name="objective" class="form-control" id="floatingText" placeholder="text">
       <label for="floatingPassword">Objective</label>
     </div>
-    <button class="w-40 btn btn-lg btn-primary" type="submit">Submit</button>
+    <button class="w-40 btn btn-lg btn-primary" type="submit" value="submit">Submit</button>
     
   </form>
   </div>
