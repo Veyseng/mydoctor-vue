@@ -2,26 +2,24 @@
 
   <div class="contact" >
      <form class="form" 
-      name="contact"
-      method="POST" 
-      date-netlify="true" >
+       @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
       <h1 >Thank you for your interest!</h1>
       <p>Contact us for more information</p>
 
       <div class="form-floating">
-        <input type="text" name="name" class="form-control" id="floatingText" placeholder="text" required>
+        <input type="text" name="name" v-model="form.name" class="form-control" id="floatingText" placeholder="text" required>
         <label for="floatingPassword">Name</label>
       </div>
     <div class="form-floating">
-      <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+      <input type="email" name="email" v-model="form.email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
       <label for="floatingInput">Email Address</label>
     </div>
     <div class="form-floating">
-      <input type="text" name="position"  class="form-control" id="floatingText" placeholder="text" required>
+      <input type="text" name="position" v-model="form.position" class="form-control" id="floatingText" placeholder="text" required>
       <label for="floatingPassword">Position</label>
     </div>
     <div class="form-floating">
-      <input type="text" name="objective" class="form-control" id="floatingText" placeholder="text" required>
+      <input type="text" name="objective" v-model="form.objective" class="form-control" id="floatingText" placeholder="text" required>
       <label for="floatingPassword">Objective</label>
     </div>
     <button class="w-40 btn btn-lg btn-primary" type="submit">Submit</button>
@@ -31,7 +29,35 @@
 
 <script>
 export default {
-  
+  data: () => ({
+      form: {
+        name: '',
+        email: '',
+        objective: '',
+        position: ''
+      }
+    }),
+    methods: {
+      encode(data) {
+        return Object.keys(data)
+        .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+        .join('&')
+      },
+      handleSubmit() {
+        fetch('/', {
+          method: 'post',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: this.encode({
+            'form-name': 'contact',
+            ...this.form
+          })
+        })
+        .then(() => console.log('successfully sent'))
+        .catch(e => console.error(e))
+      }
+    }
 }
 </script>
 
