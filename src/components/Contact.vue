@@ -1,16 +1,14 @@
 <template>
 
   <div class="contact" >
-     <form class="form" name="contact" method="POST"  data-netlify="true"
-  data-netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contact">
-    <h1 >Thank you for your interest!</h1>
-    <p>Contact us for more information</p>
+     <form class="form" name="contact" method="post"  data-netlify="true">
+      <h1 >Thank you for your interest!</h1>
+      <p>Contact us for more information</p>
 
-    <div class="form-floating">
-      <input type="text" name="name" class="form-control" id="floatingText" placeholder="text" required>
-      <label for="floatingPassword">Name</label>
-    </div>
+      <div class="form-floating">
+        <input type="text" name="name" class="form-control" id="floatingText" placeholder="text" required>
+        <label for="floatingPassword">Name</label>
+      </div>
     <div class="form-floating">
       <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
       <label for="floatingInput">Email Address</label>
