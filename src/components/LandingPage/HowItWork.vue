@@ -8,25 +8,25 @@
 			<div>
 				<!--Add icon-->
 			</div>
-			<div>
+			<div class="content-step">
 				<h3><span class="number">1</span> Signup</h3>
 			</div>
 		</div>
 		
 		<div class="col-md-6 step">
-			<div>
+			<div class="content-step">
 				<h3><span class="number">2</span> Find Treatment or Checkup</h3>
 				<p></p>
 			</div>	
 		</div>
 		<div  class="col-md-6 step">
-			<div>
+			<div class="content-step">
 				<h3><span class="number">3</span> Checkout</h3>
 				<p></p>
 			</div>
 		</div>
 		<div  class="col-md-6 step">
-			<div>
+			<div class="content-step">
 				<h3><span class="number">4</span> Ready to go</h3>
 				<p></p>
 			</div>
@@ -54,6 +54,7 @@ export default {
 	}
 	.step{
 		padding: 1rem;
+		display: flex;
 	}
 	.list-steps{
 		display: flex;
@@ -90,6 +91,9 @@ export default {
 		color: var(--primary-color);
 		width: 1rem;
 		border-radius: 4px;
+	}
+	.content-step{
+		display: flex;
 	}
 	@media only screen and (max-width: 768px){
 
