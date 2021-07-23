@@ -1,7 +1,7 @@
 <template>
 
   <div class="contact" >
-     <form class="form" name="contact" method="POST" v-on:submit.prevent="handleSubmit" data-netlify="true" action="/success" 
+     <form class="form" name="contact" method="POST"  data-netlify="true"
   data-netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="contact">
     <h1 >Thank you for your interest!</h1>
@@ -31,30 +31,6 @@
 
 <script>
 export default {
-  data(){
-      return {
-      formData: {},
-    }
-  },
-  methods: {
-  encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&')
-  },
-  handleSubmit(e) {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: this.encode({
-        'form-name': e.target.getAttribute('name'),
-        ...this.formData,
-      }),
-    })
-    .then(() => this.$router.push('/success'))
-    .catch(error => alert(error))
-  }
-}
 }
 </script>
 
