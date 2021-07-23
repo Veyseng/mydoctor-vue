@@ -1,28 +1,28 @@
 <template>
 
   <div class="contact" >
-     <form class="form" name="contact"  data-netlify="true">
+     <form class="form" name="contact" method="POST"  data-netlify="true">
    
     <h1 >Thank you for your interest!</h1>
     <p>Contact us for more information</p>
 
     <div class="form-floating">
-      <input type="text" name="name" class="form-control" id="floatingText" placeholder="text">
+      <input type="text" name="name" class="form-control" id="floatingText" placeholder="text" required>
       <label for="floatingPassword">Name</label>
     </div>
     <div class="form-floating">
-      <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
       <label for="floatingInput">Email Address</label>
     </div>
     <div class="form-floating">
-      <input type="text" name="position"  class="form-control" id="floatingText" placeholder="text">
+      <input type="text" name="position"  class="form-control" id="floatingText" placeholder="text" required>
       <label for="floatingPassword">Position</label>
     </div>
     <div class="form-floating">
-      <input type="text" name="objective" class="form-control" id="floatingText" placeholder="text">
+      <input type="text" name="objective" class="form-control" id="floatingText" placeholder="text" required>
       <label for="floatingPassword">Objective</label>
     </div>
-    <button class="w-40 btn btn-lg btn-primary" type="submit" value="submit">Submit</button>
+    <button class="w-40 btn btn-lg btn-primary" type="submit">Submit</button>
     
   </form>
   </div>
