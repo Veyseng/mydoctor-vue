@@ -12,10 +12,10 @@
                     <a href="#aboutapp" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#work" class="nav-link">How it works?</a>
+                    <a href="#service" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#service" class="nav-link">Services</a>
+                    <a href="#work" class="nav-link">How it works?</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link CTA" href="#contact">Contact Us</a>
