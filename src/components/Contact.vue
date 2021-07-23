@@ -109,13 +109,13 @@ export default {
 	  justify-content: center;
 	  color: var(--white-color);
 	  background: var(--primary-color);
-	  border: none;
+	  border: 1px var(--primary-color) solid;
 	  margin: 1rem;
   }
   .btn:hover{
 	  color: var(--primary-color);
-	  background: var(--white-color);
-	  border: none;
+	  background: 1px var(--primary-color) solid;
+	  border: 1px white solid;
   }
   @media only screen and (max-width: 768px){
 	  form{
