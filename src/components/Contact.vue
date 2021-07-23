@@ -4,7 +4,7 @@
      <form class="form" 
       name="contact"
       method="POST" 
-      netlify >
+      date-netlify="true" >
       <h1 >Thank you for your interest!</h1>
       <p>Contact us for more information</p>
 
