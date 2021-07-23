@@ -3,9 +3,10 @@
   <div class="contact" >
      <form class="form" 
        @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      
       <h1 >Thank you for your interest!</h1>
       <p>Contact us for more information</p>
-
+      <h3 class="success-text" v-if="success"><i class="fas fa-check-circle"></i> Our system has recieved your submission!</h3>
       <div class="form-floating">
         <input type="text" name="name" v-model="form.name" class="form-control" id="floatingText" placeholder="text" required>
         <label for="floatingPassword">Name</label>
@@ -35,7 +36,8 @@ export default {
         email: '',
         objective: '',
         position: ''
-      }
+      },
+      success : false
     }),
     methods: {
       encode(data) {
@@ -54,7 +56,14 @@ export default {
             ...this.form
           })
         })
-        .then(() => console.log('successfully sent'))
+        .then(() => {
+            console.log('successfully sent');
+            this.success = true
+            this.form.name = ''
+            this.form.position = ''
+            this.form.email = ''
+            this.form.objective = ''
+        })
         .catch(e => console.error(e))
       }
     }
@@ -68,7 +77,14 @@ export default {
     justify-content: center;
     align-items: center;
   }
- 
+  .success-text{
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    background: #4BB543;
+    color: var(--white-color)
+  }
   form{
     width: 40vw;
 	background-color: rgb(255, 255, 255);
