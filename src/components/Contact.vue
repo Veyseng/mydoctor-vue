@@ -2,7 +2,8 @@
 
   <div class="contact" >
      <form class="form" 
-      name="contact" 
+      name="contact"
+      method="POST" 
       netlify >
       <h1 >Thank you for your interest!</h1>
       <p>Contact us for more information</p>
