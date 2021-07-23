@@ -119,7 +119,7 @@ export default {
   }
   @media only screen and (max-width: 768px){
 	  form{
-    	width: 80vw;
+    	width: 100vw;
   		}
   }
 </style>
