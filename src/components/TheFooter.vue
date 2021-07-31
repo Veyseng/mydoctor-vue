@@ -12,6 +12,9 @@
 						<i class="fab fa-telegram"></i>
 						<i class="fas fa-globe-americas"></i>
 					</div>
+					<div>
+						© Copyright MyDoctorKH 2021
+					</div>
 				</div>
 				<div class="col-md-6 site">
 					<h3>Our site</h3>
@@ -32,10 +35,8 @@
 							<a href="#contact">Contact Us</a>
 						</li>
 					</ul>
+					
 				</div>
-			</div>
-			<div class="col-md-12 copyright">
-				© Copyright MyDoctorKH 2021
 			</div>
 		</div>
 		<div>

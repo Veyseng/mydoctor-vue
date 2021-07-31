@@ -8,10 +8,19 @@
     </div>
 	<div class="container">
      <The-AboutUs ></The-AboutUs>
+  </div>
+  <div class="container">
     <The-Benifit></The-Benifit>
     <The-Service></The-Service>
     <The-How ></The-How>
-    <The-Available></The-Available>
+  </div>
+  <div class="available">
+    <div class="container ">
+    <The-Available ></The-Available>
+  </div>
+  </div>
+  
+  <div class="container">
     <The-Testimony></The-Testimony>
     <The-Stay-In-Touch></The-Stay-In-Touch>
   </div>
@@ -55,6 +64,9 @@ StayInTouch
      background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+  }
+  .available{
+    background: rgb(251, 250, 250);
   }
   @keyframes gradient {
     0% {

@@ -3,16 +3,10 @@
 	  <h1>Available Soon</h1>
 	  <div class="logo">
 		  <div class="content">
-			  <i class="fab fa-app-store-ios"></i>
-			  <h3>App Store</h3>
+			  <img class="img" src="../../../src/assets/playstore.png">
 		  </div>
 		  <div class="content">
-			  <i class="fab fa-google-play"></i>
-			  <h3>Play Store</h3>
-		  </div>
-		  <div class="content">
-			  <i class="fas fa-globe-asia"></i>
-			  <h3>Website</h3>
+			 <img class="img" src="../../../src/assets/appstore.png">
 		  </div>
 	  </div>
 	  
@@ -28,21 +22,18 @@ export default {
 <style scoped>
 	h1{
 		text-align: center;
-		color: white;
 		font-size: 2rem;
 	}
 	.available{
-		background: var(--primary-color);
 		padding: 1rem;
 	}
 	i{
 		font-size: 3rem;
-		color: var(--white-color);
 	}
 	.logo{
 		display: flex;
-		justify-content: space-around;
-		align-items: flex-start;
+		justify-content: center;
+		align-items: center;
 	}
 	.content{
 		display: flex;
@@ -53,5 +44,16 @@ export default {
 	h3{
 		font-size: 1rem;
 		color: var(--lightgray-color);
+	}
+	.img{
+		width: 15vw;
+	}
+	@media only screen and (max-width: 600px){
+		.logo{
+			flex-direction: column-reverse;
+		}
+		.img{
+			width: 75vw;
+		}
 	}
 </style>
