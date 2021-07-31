@@ -27,6 +27,7 @@ export default {
 <style scoped>
 	#contact{
 		padding-top: 8rem;
+		border: none;
 	}
 	h1{
 		color:var(--secondary-color)
@@ -34,6 +35,6 @@ export default {
 	.row{
 		margin-bottom: 5rem;
 		border-radius: 5px;
-		background: url('../../../src/assets/contactus.jpg') center/cover no-repeat;
+		background: url('../../../src/assets/kids.jpeg') right/cover no-repeat;
 	}
 </style>

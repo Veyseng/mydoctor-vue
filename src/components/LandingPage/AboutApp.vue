@@ -1,5 +1,8 @@
 <template>
-  <div class="row about-app " >
+  <div class="row about-app "  id="aboutapp">
+	  <div class="col-md-6  about-app-image">
+			<img class="img" src="../../../src/assets/app-mockup.jpg" alt="">
+		</div>
 	   <div class="col-md-6 about-app-content" >
 			<div>
 				<h1 class="about-app-text ">About Our Platform</h1>
@@ -10,9 +13,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="col-md-6  about-app-image">
-			<img class="img" src="../../../src/assets/phoneprototype.jpg" alt="">
-		</div>
+		
   </div>
 </template>
 
@@ -26,30 +27,34 @@ export default {
 	h1{
 		display: inline-block;
 		font-size: 2rem;
-		color: gradient();
+		color: var(--primary-color);
+		font-weight: 500;
 	}
 	.about-app{
-		margin-top: 10rem;
+		padding: 8rem 0;
 		height: auto;
 	}
 	.about-app-content{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		justify-content: flex-start;
+		align-items: flex-start;
+		border-radius: 10px;
 	}
 	.about-app-image{
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		justify-content: center;
-
+		justify-content: flex-start;
 	}
 	.img{
 		border-radius: 20px;
 		width: 100%;
 	}
 	p{
-		color:var(--gray-color)
+		color:var(--white-color);
+		padding: 1rem;
+		border-radius: 10px;
+		background: var(--secondary-color);
 	}
 </style>

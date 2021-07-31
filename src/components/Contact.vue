@@ -1,30 +1,31 @@
 <template>
 
   <div class="contact" >
-     <form class="form" 
+    <form class="form" 
        @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-      
-      <h1 >Thank you for your interest!</h1>
-      <p>Contact us for more information</p>
+      <h1 >Thank You For Your Interest!</h1>
+      <p>Contact Us For More Information</p>
       <h3 class="success-text" v-if="success"><i class="fas fa-check-circle"></i> Our system has recieved your submission!</h3>
       <div class="form-floating">
         <input type="text" name="name" v-model="form.name" class="form-control" id="floatingText" placeholder="text" required>
         <label for="floatingPassword">Name</label>
       </div>
-    <div class="form-floating">
-      <input type="email" name="email" v-model="form.email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-      <label for="floatingInput">Email Address</label>
-    </div>
-    <div class="form-floating">
-      <input type="text" name="position" v-model="form.position" class="form-control" id="floatingText" placeholder="text" required>
-      <label for="floatingPassword">Position</label>
-    </div>
-    <div class="form-floating">
-      <input type="text" name="objective" v-model="form.objective" class="form-control" id="floatingText" placeholder="text" required>
-      <label for="floatingPassword">Objective</label>
-    </div>
-    <button class="w-40 btn btn-lg btn-primary" type="submit">Submit</button>
-  </form>
+      <div class="form-floating">
+        <input type="email" name="email" v-model="form.email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+        <label for="floatingInput">Email Address</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" name="position" v-model="form.position" class="form-control" id="floatingText" placeholder="text" required>
+        <label for="floatingPassword">Position</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" name="objective" v-model="form.objective" class="form-control" id="floatingText" placeholder="text" required>
+        <label for="floatingPassword">Objective</label>
+      </div>
+      <div class="CTA-btn">
+        <button class="w-40 btn btn-lg btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
   </div>
 </template>
 
@@ -85,13 +86,16 @@ export default {
     background: #4BB543;
     color: var(--white-color)
   }
+  input{
+    margin: 1rem 0;
+  }
   form{
     width: 40vw;
-	background-color: rgb(255, 255, 255);
-	padding: 2rem;
-	border-radius: 10px;
-	 box-shadow:
-            0 10px 27px rgba(73, 73, 73, 0.2);
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow:
+              0 10px 27px rgba(73, 73, 73, 0.2);
   }
   input:focus{
     box-shadow: none;
@@ -100,26 +104,32 @@ export default {
   h1{
 	  display: inline-block;
 	  padding: 2px;
-	  background: -webkit-linear-gradient(45deg,var(--primary-color), var(--secondary-color));
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+    color: var(--primary-color);
   }
-  .btn{
-	  display: flex;
-	  justify-content: center;
+  p{
+    padding: 2px;
+    color: var(--secondary-color);
+  }
+  .CTA-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  button{
 	  color: var(--white-color);
 	  background: var(--primary-color);
 	  border: 1px var(--primary-color) solid;
-	  margin: 1rem;
+	  margin: 1rem; 
   }
   .btn:hover{
 	  color: var(--primary-color);
-	  background: 1px var(--primary-color) solid;
-	  border: 1px white solid;
+	  border: 1px var(--primary-color) solid;
+    background: var(--white-color);
   }
   @media only screen and (max-width: 768px){
 	  form{
     	width: 100vw;
-  		}
+      border: none;
+  	}
   }
 </style>

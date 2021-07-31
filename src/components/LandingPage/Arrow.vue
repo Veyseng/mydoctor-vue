@@ -43,7 +43,7 @@ export default {
   top: 0;
   height: 100%;
   width: 51%;
-  background: var(--primary-color);
+  background: var(--white-color);
 }
 
 .chevron:before {
@@ -82,7 +82,7 @@ export default {
   margin-left: -30px;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 12px;
-  color: var(--secondary-color);
+  color: var(--white-color);
   text-transform: uppercase;
   white-space: nowrap;
   opacity: .25;

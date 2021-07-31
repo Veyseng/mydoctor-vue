@@ -1,14 +1,21 @@
 <template>
-	<div class="container">
+	<div>
 		<!--The hero -->
-		<The-Hero></The-Hero>
-    <The-AboutUs ></The-AboutUs>
+    <div class="hero-content">
+      <div class="container">
+        <The-Hero></The-Hero>
+      </div>
+    </div>
+	<div class="container">
+     <The-AboutUs ></The-AboutUs>
     <The-Benifit></The-Benifit>
     <The-Service></The-Service>
     <The-How ></The-How>
     <The-Available></The-Available>
     <The-Testimony></The-Testimony>
     <The-Stay-In-Touch></The-Stay-In-Touch>
+  </div>
+   
   <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 
   <!-- Columns are always 50% wide, on mobile and desktop -->
@@ -39,3 +46,25 @@ StayInTouch
 	}
 }
 </script>
+<style scoped>
+  .hero-content{
+    /*background:  linear-gradient(
+		to top right, 
+		var(--primary-color), var(--secondary-color)
+	  );*/
+     background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+</style>
