@@ -3,7 +3,7 @@
 
 </div>
   <div class="row how-it-work">
-	  	<h1 >How it work?</h1>
+	  	<h1 >How our booking work?</h1>
 		<div class="col-md-6 step">
 			<div>
 				<!--Add icon-->
@@ -46,8 +46,9 @@ export default {
 	padding-top: 8rem;
 }
 	h1{
-		font-size: 2rem;
 		text-align: center;
+		font-size: 2rem;
+		color: var(--primary-color);
 	}
 	li{
 		list-style: none;

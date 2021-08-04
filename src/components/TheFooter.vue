@@ -13,7 +13,6 @@
 						<i class="fas fa-globe-americas"></i>
 					</div>
 					<div>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, repellat! Omnis praesentium necessitatibus similique. Voluptate voluptates repellat tenetur nihil recusandae omnis natus at perspiciatis aliquid explicabo vero, nisi iure vitae.</p>
 					</div>
 					<div>
 						<p class="copy-right"> © Copyright MyDoctorKH 2021</p>
@@ -63,7 +62,6 @@ export default {
 	h1{
 		padding: 1px;
 		font-size: 2rem;
-		color: var(--primary-color);
 	}
 	.container{
 		margin: none;

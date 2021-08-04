@@ -80,6 +80,9 @@ export default {
     h4{
         font-size: 1.3rem;
     }
+    p{
+        padding: .5rem;
+    }
 	#service{
 		padding-top: 8rem;
 	}
@@ -95,10 +98,10 @@ img{
 }
 
 .our-services {
-    margin-top: 75px;
+    margin-top: 5rem;
     padding-bottom: 30px;
     padding: 0 1rem;
-    min-height: 10rem;
+    min-height: 13rem;
     text-align: center;
     border-radius: 10px;
     background-color: #fff;
