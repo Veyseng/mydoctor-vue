@@ -28,7 +28,7 @@ export default {
 		display: inline-block;
 		font-size: 2rem;
 		color: var(--primary-color);
-		font-weight: 500;
+		padding: 1rem;
 	}
 	.about-app{
 		padding: 8rem 0;

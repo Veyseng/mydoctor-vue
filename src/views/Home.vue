@@ -1,5 +1,4 @@
 <template>
-	<div>
 		<!--The hero -->
     <div class="hero-content">
       <div class="container">
@@ -9,15 +8,21 @@
 	<div class="container">
      <The-AboutUs ></The-AboutUs>
   </div>
+  <div class="available">
   <div class="container">
     <The-Benifit></The-Benifit>
+  </div>
+  </div>
     <The-Service></The-Service>
+  
+    
+  <div class="container">
     <The-How ></The-How>
   </div>
   <div class="available">
     <div class="container ">
     <The-Available ></The-Available>
-  </div>
+    </div>
   </div>
   
   <div class="container">
@@ -29,7 +34,6 @@
 
   <!-- Columns are always 50% wide, on mobile and desktop -->
  
-</div>
 </template>
 
 <script>
@@ -66,8 +70,13 @@ StayInTouch
     animation: gradient 15s ease infinite;
   }
   .available{
-    background: rgb(251, 250, 250);
+    background: #fff;
   }
+  
+	.container-fluid{
+		width: 100vw;
+    padding: 0;
+	}
   @keyframes gradient {
     0% {
         background-position: 0% 50%;

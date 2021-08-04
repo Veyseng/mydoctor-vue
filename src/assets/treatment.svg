@@ -1,0 +1,7 @@
+<svg id="Component_69_1" data-name="Component 69 – 1" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <g id="Ellipse_5" data-name="Ellipse 5" fill="#fff" stroke="#8b61de" stroke-width="2">
+    <circle cx="64" cy="64" r="64" stroke="none"/>
+    <circle cx="64" cy="64" r="63" fill="none"/>
+  </g>
+  <path id="Icon_awesome-briefcase-medical" data-name="Icon awesome-briefcase-medical" d="M49.04,12.4H40.584V7.323A5.074,5.074,0,0,0,35.511,2.25H18.6a5.074,5.074,0,0,0-5.073,5.073V12.4H5.073A5.074,5.074,0,0,0,0,17.469V47.907a5.074,5.074,0,0,0,5.073,5.073H49.04a5.074,5.074,0,0,0,5.073-5.073V17.469A5.074,5.074,0,0,0,49.04,12.4ZM20.292,9.014H33.82V12.4H20.292ZM37.2,35.225a.848.848,0,0,1-.846.846H30.438v5.919a.848.848,0,0,1-.846.846H24.52a.848.848,0,0,1-.846-.846V36.07H17.756a.848.848,0,0,1-.846-.846V30.152a.848.848,0,0,1,.846-.846h5.919V23.388a.848.848,0,0,1,.846-.846h5.073a.848.848,0,0,1,.846.846v5.919h5.919a.848.848,0,0,1,.846.846Z" transform="translate(37 36.75)" fill="#8b61de"/>
+</svg>

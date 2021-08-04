@@ -1,74 +1,67 @@
 <template>
-<div id="service">
-
-</div>
-  <div class="row">
-	  <h1>Our Services</h1>
-	  <div class="col-md-6 service-content" >
-		  	<div class='checkup-image'>
-
+	<div class="container">
+		<div class="row">
+			<div id="service">
 			</div>
-			<div class="text-content text-checkup">
-				<div>
-					<h1 class="hero-text ">Checkup</h1>
-				</div>
-				<!--
-				<div>
-					<router-link class="CTA CTA-checkup" to="/contact">Explore more</router-link>
-				</div>
-				-->
-			</div>
+			<h1>Our Services</h1>
+			<div class="col-md-4">
+            <div class="box">
+                <div class="our-services service">
+                    <div class="icon"> <img src="../../../src/assets/checkup.svg"> </div>
+                    <h4>Checkup Booking</h4>
+                    <p>Find and book the best checkup package or service with detailed information</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services service">
+                    <div class="icon"> <img src="../../../src/assets/treatment.svg"> </div>
+                    <h4>Treatment Booking</h4>
+                    <p>Find and book non-emergency treatment with the best service</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services service">
+                    <div class="icon"> <img src="../../../src/assets/online.svg"> </div>
+                    <h4>Online Consultation</h4>
+                    <p>Find and book to consult with experienced doctor with the best advices and experiences</p>
+                </div>
+            </div>
+        </div>
 		</div>
-	   <div class="col-md-6 service-content">
-			<div class='treatment-image'>
-
-			</div>
-			<div  class="text-content text-treatment">
-				<div>
-					<h1 class="hero-text ">Treatment</h1>
-				</div>
-				<!--
-				<div>
-					<router-link class="CTA CTA-treatment" to="/contact">Explore more</router-link>
-				</div>
-				-->
-			</div>
+		<div class="row">
+			<div class="col-md-4">
+            <div class="box">
+                <div class="our-services service">
+                    <div class="icon"> <img src="../../../src/assets/findhospital.svg"> </div>
+                    <h4>Find Hospital</h4>
+                    <p>Find and check hospital with the information that is trust and helpful</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services service">
+                    <div class="icon"> <img src="../../../src/assets/medicine.svg"> </div>
+                    <h4>Medicine Listing</h4>
+                    <p>Find and check the medicine which would be available in the phamacies</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="our-services service">
+                    <div class="icon"> <img src="../../../src/assets/content.svg"> </div>
+                    <h4>Health Content</h4>
+                    <p>Check and read the relevant health content which is verified from the specialists</p>
+                </div>
+            </div>
+        </div>
 		</div>
-			
-  </div>
-  <div class="row">
-	  
-	   <div class="col-md-6 service-content">
-			<div class='content-image'>
-			</div>
-			<div  class="text-content text-treatment">
-				<div>
-					<h1 class="hero-text">Health Contents</h1>
-				</div>
-				<!--
-				<div>
-					<router-link class="CTA CTA-treatment" to="/contact">Explore more</router-link>
-				</div>
-				-->
-			</div>
-		</div>
-		<div class="col-md-6 service-content" >
-		  	<div class='consult-image'>
-
-			</div>
-			<div class="text-content text-checkup">
-				<div>
-					<h1 class="hero-text ">Online Consultation</h1>
-				</div>
-				<!--
-				<div>
-					<router-link class="CTA CTA-checkup" to="/contact">Explore more</router-link>
-				</div>
-				-->
-			</div>
-		</div>
-  </div>
-	
+	</div>
 	
 </template>
 
@@ -82,112 +75,90 @@ export default {
 	h1{
 		text-align: center;
 		font-size: 2rem;
+		color: var(--primary-color);
 	}
-	p{
-		padding: .5rem;
-	}
+    h4{
+        font-size: 1.3rem;
+    }
 	#service{
 		padding-top: 8rem;
 	}
-	.row{
-		height: auto;
-		
-	}
-	.service-content{
-		display: flex;
-		flex-direction: column;
-		justify-content:flex-start;
-		align-items: center;
-		margin: 1rem 0;
-	}
-	.hideme{
-		opacity: 0;
-	}
-	.text-checkup{
-		width:33vw;
-		background: var(--secondary-color);
-		color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		border-radius: 0 0 10px 10px;
-		padding: 1rem 0;
-	}
-	.text-treatment{
-		width:33vw;
-		background: var(--secondary-color);
-		color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		border-radius: 0 0 10px 10px;
-		padding: 1rem 0;
-	}
-	.checkup-image{
-		border-radius: 10px 10px 0 0;
-		width:33vw;
-		height: 20vh;
-		background: url('../../../src/assets/checkup-image.jpg') center/cover no-repeat;
-	}
-	.treatment-image{
-		border-radius: 10px 10px 0 0;
-		width:33vw;
-		height: 20vh;
-		background: url('../../../src/assets/treatment-pic.jpg') center/cover no-repeat;
-	}
-	.consult-image{
-		border-radius: 10px 10px 0 0;
-		height: 20vh;
-		width:33vw;
-		background: url('../../../src/assets/online_consultation.jpg') center/cover no-repeat;
-	}
-	.content-image{
-		border-radius: 10px 10px 0 0;
-		height: 20vh;
-		width: 33vw;
-		background: url('../../../src/assets/content_health.jpg') center/cover no-repeat;
-	}
+	.box {
+    position: relative;
+    width: 100%;
+    padding-right: .1rem;
+    padding-left: .1rem;
+}
+img{
+    width: 5vw;
+    min-height: 5rem;  
+}
+
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 1rem;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(79, 80, 80, 0.1);
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.service:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background: var(--primary-color);
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
 	@media screen and (max-device-width: 767px){
 		.row{
 			height: auto;
 		}
-		.checkup-image{
-			width: 80vw;
-		}
-		.treatment-image{
-			width: 80vw;
-		}
-		.content-image{
-			width: 80vw;
-		}
-		.consult-image{
-			width: 80vw;
-		}
-		.online-image{
-			width: 80vw;
-		}
-		.text-treatment{
-			width: 80vw;
-		}
+        img{
+            width: 20vw;
+        }
 
-		.text-checkup{
-			width: 80vw;
-		}
-
-	}
-	.CTA{
-		padding: 2px;
-		border-radius: 5px;
-		text-decoration: none;
-		font-size: 1.2rem;
-		background: var(--white-color);
-	}
-	.CTA-checkup{
-		color: var(--secondary-color);
-	}
-	.CTA-treatment{
-		color: var(--secondary-color);
 	}
 </style>
