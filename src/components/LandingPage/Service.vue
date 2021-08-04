@@ -27,7 +27,7 @@
                 <div class="our-services service">
                     <div class="icon"> <img src="../../../src/assets/online.svg"> </div>
                     <h4>Online Consultation</h4>
-                    <p>Find and book to consult with experienced doctor with the best advices and experiences</p>
+                    <p>Find and book to consult with experienced doctor with the best advices and suggestions</p>
                 </div>
             </div>
         </div>
